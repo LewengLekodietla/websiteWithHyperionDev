@@ -1,0 +1,637 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+//I have created a separate .scss file that contains all variables created for the webpage
+@import '_newVariables';
+
+//The below styling takes all specified elements and defaults the stipulated declaration
+body,
+ul,
+li,
+h1,
+h2,
+a {
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+}
+
+//The the class below has been created, for the 'lewengCurriculumVitae.html' file, to create and style place all 'article' tags into a grid layout
+.mainGridContainer {
+    
+    color: white;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+//The below lays out the last article section to span the rest of the columns on the page - to spread the width of the content
+#bodyBody {
+    .articleEight {
+        grid-column: span 2
+    }
+}
+
+//The below lays out the last article section to span the rest of the columns on the page - to spread the width of the content
+#bodyBody {
+    .articleFifteen {
+        grid-column: span 2;
+    }
+}
+
+//The below styles the body of the page by, setting the margin, font family and background color , of all elements' boxes
+#bodyBody {
+    font-family: "Poppins";
+    
+    line-height: normal;
+  }
+
+/*The header is incorporated with the banner image as it's background (and s overlayed the banner image).
+I have also ensured the header is appropriately rendered through it's padding, shown in the center and has it shown whilst scrolling down*/
+#bodyHeader {
+        padding: 20px;
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        //This attribute ensures that the header is always visible when scrolling down each section of the page i.e., it is brought to the front
+        z-index: 1;
+        top:0;
+        left:0;
+
+}
+
+
+
+.headingOneName, .headingTwoSeniority, .educationHeaderOneMain {
+    padding: 5px;
+    text-align: center;
+    
+}
+
+//The below styling ensures that the only heading in the 'header' section is applied with the below nested color variable and other details
+header {
+    #headerBigHeading {
+        color: $secondary;
+        border: 8px solid rgb(215, 120, 11);
+        padding: 6px 12px;
+        display: inline-block;
+        border-radius: 36px;
+        background-color: $backgroundNavColor;
+}
+}
+
+/*The image banner, stored in the 'img' file directory, is nested within the class 'banner' - which is under the 'section' tag (after the 'header' section,
+and is set it's maximum width so that the image is sufficiently rendered on the page (and does not overflow into other sections of the page*/
+.banner {
+    img {
+        max-width: 100%;
+        
+      }
+}
+
+#banner {
+    img {
+        max-width: 100%;
+        
+      }
+}
+
+.banner {
+    position: relative;
+  }
+
+#banner {
+    position: relative;
+  }
+/*The declaration below takes the image classed 'whatIsBusinessAnalysisImage' and places it in the centre - 
+associating with heading: 'What is business analysis' */
+#mainSectionBody{
+    .whatIsBusinessAnalysisImage {
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+                padding: $base-padding;
+            }
+    }
+} 
+/*The below selects and applies the styling to the entire navigation details i.e. the navigation unordered list, and ensures the list is on one
+line block and is always in view when scrolling down (after the header meets the list: one on top of the other)*/
+nav {
+    background-color: $backgroundNavColor;
+    padding: 20px;
+    position: sticky;
+    top: 85px;
+    border-radius: 36px;
+    border: 5px solid $otherColor;
+  }
+
+main {
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+/*All 3 links, redirecting the user to different web pages and an email inbox, respectivley, are manipulated to show on one line and to share width space on the same line*/
+nav {
+    li {
+        display: inline-block;
+        width: 24.5%;
+        font-size: 24px;
+    }
+}
+
+/*All anchor tags that redirect the user, from clicking the links, are removed of the default underline and purple mark when selected*/
+nav {
+    li {
+        a {
+            text-decoration: none;
+            color: $header;
+        }
+    } 
+}
+
+
+
+
+h1, h2 {
+    color: $header;
+}
+
+footer {
+    background-color: $backgroundNavColor;
+    text-align: center;
+}
+
+
+#mainSectionBody {
+    background-color: $mainBackgroundColor; 
+}
+
+//This declaration ensures application of the padding pre-defined in the variable '$base-padding' to the classified unorderedlist
+.articleTwo {
+    .mainUnorderedListOne {
+        padding: $base-padding + 0.25;
+    }
+}
+
+//This declaration ensures application of the padding pre-defined in the variable '$base-padding' to the classified unorderedlist
+
+.articleThree {
+    .mainUnorderedListTwo {
+        padding: $base-padding + 0.25;
+    }
+}
+
+//This declaration ensures application of the padding pre-defined in the variable '$base-padding' to the classified unorderedlist
+
+.articleFour {
+    .mainTableOne {
+        padding: $base-padding + 0.25;
+    }
+}
+
+//This declaration ensures application of the padding pre-defined in the variable '$base-padding' to the classified unorderedlist
+.articleFive {
+    .mainUnorderedListThree {
+        padding: $base-padding + 0.25;
+    }
+}
+
+//This declaration ensures application of the padding pre-defined in the variable '$base-padding' to the classified table
+article {
+    .mainMediumHeadingTwo {
+        .mainParagraphFive {
+            .mainTableTwo {
+                padding: $base-padding + 0.25;
+        }
+        }
+    }
+}
+
+//This declaration ensures application of the padding pre-defined in the variable '$base-padding' to the classified unorderedlist
+.mainUnorderedListFour {
+    padding: $base-padding + 0.25;
+}
+
+//This declaration ensures application of the padding pre-defined in the variable '$base-padding' to the classified table
+.mainTableThree {
+    padding: $base-padding + 0.25;
+}
+
+//This declaration ensures application of the padding pre-defined in the variable '$base-padding' to the identified unorderedlist
+#moreInfoBusiness-Analysis {
+        padding: $base-padding + 0.25;
+}
+
+//This declaration ensures application of the padding pre-defined in the variable '$base-padding' to the classified footer anchor tags
+#moreInfoBusiness-Analysis {
+    .social {
+        padding: $base-padding * 2;
+    }
+}
+
+//The below declaration takes the list items embedded in the footer section, lays them on the same line and ensure equal share of space/width divided into 100%. I have increased the font size for visibility
+footer {
+    nav {
+        li {
+            display: inline-block;
+            width: 33%;
+            font-size: 24px;
+        }
+    }
+}
+
+//The below declaration aligns all data in the table in a centered position
+.mainTableOne, .mainTableTwo {
+    tr {
+        text-align: center;
+    }
+}
+
+/*The declaration below takes both images, declared as list items and places them in the centre of the page*/
+.images {
+    text-align: center;
+    margin: 80px 0;
+    white-space: nowrap;
+  }
+  
+
+
+//I have applied the predefined padding within the declaration below, to the form that the user is redirected to - to sign-up for my blogs
+form {
+    padding: $base-padding;
+}
+
+//The selectors and declaration target the the list items in the index.html file only within class .bodyDetails - to remove the bullet points style
+.bodyDetails {
+    article {
+        ul {
+            li {
+                list-style-type: none;
+            }
+        }
+    }
+}
+
+//The selectors and declaration target the the list items in the index.html file only within class .bodyDetails
+.bodyDetails {
+    article {
+        ul {
+           li {
+                text-align: center;
+            }
+        }
+    }
+}
+
+//The selectors and declaration target the paragraph word in between the list items within class .articleUnorderedList
+main {
+    article {
+        ul {
+           p {
+                text-align: center;
+            }
+        }
+    }
+}
+
+ul {
+    padding: $base-padding;
+    margin: $base-margin;
+}
+
+.bookmark{
+    width: 0;
+    height: 0;
+    border-top: 30px solid blue;
+    border-right: 12px solid blue;  
+    border-bottom: 15px solid transparent;
+    border-left: 12px solid blue;
+    
+}
+
+.modal {
+
+    padding: 1em;
+    max-width: 50ch;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  body{
+    background: #757575;
+  }
+  
+  .wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .wrapper .container{
+    width: 200px;
+  }
+  
+  .wrapper .hamburger_btn{
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 16px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    position: fixed;
+    cursor: pointer;
+  }
+  
+  .wrapper .hamburger_btn > div{
+    position: fixed;
+    top: 45%;
+    left: 25%;
+    width: 50%;
+    height: 3px;
+    background: #fff;
+    border-radius: 50px;
+    transition: all 0.3s linear;
+  }
+  
+  .wrapper .hamburger_btn .one{
+    top: 25%;
+  }
+  
+  .wrapper .hamburger_btn .three{
+    top: 65%;
+  }
+  
+  .wrapper .container .menu{
+    width: 180px;
+    height: auto;
+    margin: 0 auto;
+    background: #fff;
+    position: relative;
+    opacity: 0;
+    top: -10px;
+    transition: all 0.5s linear;
+  }
+  
+  .wrapper .container .menu ul li{
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.2s linear;
+  }
+  
+  .wrapper .container .menu ul li a{
+    padding: 10px;
+    font-size: 12px;
+    color: #757575;
+    display: block;
+    transition: all 0.2s linear;
+  }
+  
+  .wrapper .container .menu ul li:hover{
+    background: #80ddd2;
+  }
+  
+  .wrapper .container .menu ul li:hover a{
+    color: #fff;
+  }
+  
+  .wrapper .container .menu:before{
+    content: "";
+    position: absolute;
+    top: -19px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+  }
+  
+  .wrapper .hamburger_btn.active{
+    transform: rotate(90deg);
+  }
+  
+  .wrapper .hamburger_btn.active .one{
+      top: 45%;
+      left: 25%;
+      transform: rotate(45deg);
+  }
+  
+  .wrapper .hamburger_btn.active .two{
+    opacity: 0;
+  }
+  
+  .wrapper .hamburger_btn.active .three{
+      top: 45%;
+      left: 25%;
+      transform: rotate(-45deg);
+  }
+  
+  .wrapper .container .menu.active{
+    opacity: 1;
+    top: 0px;
+  }
+
+  .wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  .wrapper .container{
+    width: 200px;
+  }
+  
+  .wrapper .hamburger_btn{
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 16px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .wrapper .hamburger_btn > div{
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    width: 50%;
+    height: 3px;
+    background: #fff;
+    border-radius: 50px;
+    transition: all 0.3s linear;
+  }
+  
+  .wrapper .hamburger_btn .one{
+    top: 25%;
+  }
+  
+  .wrapper .hamburger_btn .three{
+    top: 65%;
+  }
+  
+  .wrapper .container .menu{
+    width: 180px;
+    height: auto;
+    margin: 0 auto;
+    background: #fff;
+    position: relative;
+    opacity: 0;
+    top: -10px;
+    transition: all 0.5s linear;
+  }
+  
+  .wrapper .container .menu ul li{
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.2s linear;
+  }
+  
+  .wrapper .container .menu ul li a{
+    padding: 10px;
+    font-size: 12px;
+    color: #757575;
+    display: block;
+    transition: all 0.2s linear;
+  }
+  
+  .wrapper .container .menu ul li:hover{
+    background: #80ddd2;
+  }
+  
+  .wrapper .container .menu ul li:hover a{
+    color: #fff;
+  }
+  
+  .wrapper .container .menu:before{
+    content: "";
+    position: absolute;
+    top: -19px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+  }
+  
+  .wrapper .hamburger_btn.active{
+    transform: rotate(90deg);
+  }
+  
+  .wrapper .hamburger_btn.active .one{
+      top: 45%;
+      left: 25%;
+      transform: rotate(45deg);
+  }
+  
+  .wrapper .hamburger_btn.active .two{
+    opacity: 0;
+  }
+  
+  .wrapper .hamburger_btn.active .three{
+      top: 45%;
+      left: 25%;
+      transform: rotate(-45deg);
+  }
+  
+  .wrapper .container .menu.active{
+    opacity: 1;
+    top: 0px;
+  }
+
+.formBody{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: verdana;
+    border: none;
+    outline: none;
+    letter-spacing: 2px;
+    background: #222;
+    padding: 0px 0px 25px 10px;
+}
+
+.commentLine{
+    background: #222;
+}
+
+.formBody{
+    .container{
+        width:500px;
+        text-align: left;
+    }
+}
+
+.box-container{
+    height: 200px;
+    width: 100%;
+    background: #444;
+    box-shadow: 0 5px 15px #111;
+    border-radius: 5px 5px 5px 5px;
+    padding: 10px 10px 20px 15px;
+    //Line 585 defaults the text area to non-visible, to be visible enabled through code in 'applicationCapstone.js'
+    display: none;
+}
+
+.box-container .box{
+    height: 75%;
+    width: 90%;
+    border-radius: 5px;
+    padding: 20px 30px 5px 15px;
+    background: #f8f8f8;
+    overflow-y:auto;
+    text-align: left;
+}
+
+#input{
+    width:100%;
+    height: 40px;
+    background: none;
+    font-size: 15px;
+    color: #fff;
+    border-style:none;
+    border-bottom: 1px solid #fff;
+}
+
+#input:focus{
+    border-bottom: 2px solid #fff;
+}
+
+button{
+    height: 30px;
+    width: 160px;
+    background: #ff0033;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px 0;
+    font-size: 15px;
+    box-shadow: 0 3px 10px #111;
+}
+
+button:hover{
+    opacity: .8;
+}
+
+.like{
+        color: #00000030;
+        font-size: 3em;
+        
+}
+
+.heart i.fa-heart{
+    color: #f44336;
+}
+
+

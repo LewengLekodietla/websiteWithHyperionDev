@@ -1,0 +1,534 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+/*Theme colors*/
+/*spacing*/
+/*borders*/
+body,
+ul,
+li,
+h1,
+h2,
+a {
+  margin: 0;
+  padding: 0;
+  font-family: arial;
+}
+
+.mainGridContainer {
+  color: white;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+#bodyBody .articleEight {
+  grid-column: span 2;
+}
+
+#bodyBody .articleFifteen {
+  grid-column: span 2;
+}
+
+#bodyBody {
+  font-family: "Poppins";
+  line-height: normal;
+}
+
+/*The header is incorporated with the banner image as it's background (and s overlayed the banner image).
+I have also ensured the header is appropriately rendered through it's padding, shown in the center and has it shown whilst scrolling down*/
+#bodyHeader {
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.headingOneName, .headingTwoSeniority, .educationHeaderOneMain {
+  padding: 5px;
+  text-align: center;
+}
+
+header #headerBigHeading {
+  color: #0f6b89;
+  border: 8px solid rgb(215, 120, 11);
+  padding: 6px 12px;
+  display: inline-block;
+  border-radius: 36px;
+  background-color: hsla(0, 0%, 96%, 0.677);
+}
+
+/*The image banner, stored in the 'img' file directory, is nested within the class 'banner' - which is under the 'section' tag (after the 'header' section,
+and is set it's maximum width so that the image is sufficiently rendered on the page (and does not overflow into other sections of the page*/
+.banner img {
+  max-width: 100%;
+}
+
+#banner img {
+  max-width: 100%;
+}
+
+.banner {
+  position: relative;
+}
+
+#banner {
+  position: relative;
+}
+
+/*The declaration below takes the image classed 'whatIsBusinessAnalysisImage' and places it in the centre - 
+associating with heading: 'What is business analysis' */
+#mainSectionBody .whatIsBusinessAnalysisImage img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 1.9rem;
+}
+
+/*The below selects and applies the styling to the entire navigation details i.e. the navigation unordered list, and ensures the list is on one
+line block and is always in view when scrolling down (after the header meets the list: one on top of the other)*/
+nav {
+  background-color: hsla(0, 0%, 96%, 0.677);
+  padding: 20px;
+  position: sticky;
+  top: 85px;
+  border-radius: 36px;
+  border: 5px solid hwb(16 35% 20%);
+}
+
+main {
+  max-width: 100%;
+  width: 1200px;
+  margin: 80px auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+/*All 3 links, redirecting the user to different web pages and an email inbox, respectivley, are manipulated to show on one line and to share width space on the same line*/
+nav li {
+  display: inline-block;
+  width: 24.5%;
+  font-size: 24px;
+}
+
+/*All anchor tags that redirect the user, from clicking the links, are removed of the default underline and purple mark when selected*/
+nav li a {
+  text-decoration: none;
+  color: #e3740d;
+}
+
+h1, h2 {
+  color: #e3740d;
+}
+
+footer {
+  background-color: hsla(0, 0%, 96%, 0.677);
+  text-align: center;
+}
+
+#mainSectionBody {
+  background-color: hwb(0 33% 67%/0.259);
+}
+
+.articleTwo .mainUnorderedListOne {
+  padding: 2.15rem;
+}
+
+.articleThree .mainUnorderedListTwo {
+  padding: 2.15rem;
+}
+
+.articleFour .mainTableOne {
+  padding: 2.15rem;
+}
+
+.articleFive .mainUnorderedListThree {
+  padding: 2.15rem;
+}
+
+article .mainMediumHeadingTwo .mainParagraphFive .mainTableTwo {
+  padding: 2.15rem;
+}
+
+.mainUnorderedListFour {
+  padding: 2.15rem;
+}
+
+.mainTableThree {
+  padding: 2.15rem;
+}
+
+#moreInfoBusiness-Analysis {
+  padding: 2.15rem;
+}
+
+#moreInfoBusiness-Analysis .social {
+  padding: 3.8rem;
+}
+
+footer nav li {
+  display: inline-block;
+  width: 33%;
+  font-size: 24px;
+}
+
+.mainTableOne tr, .mainTableTwo tr {
+  text-align: center;
+}
+
+/*The declaration below takes both images, declared as list items and places them in the centre of the page*/
+.images {
+  text-align: center;
+  margin: 80px 0;
+  white-space: nowrap;
+}
+
+form {
+  padding: 1.9rem;
+}
+
+.bodyDetails article ul li {
+  list-style-type: none;
+}
+
+.bodyDetails article ul li {
+  text-align: center;
+}
+
+main article ul p {
+  text-align: center;
+}
+
+ul {
+  padding: 1.9rem;
+  margin: 0.75rem;
+}
+
+.bookmark {
+  width: 0;
+  height: 0;
+  border-top: 30px solid blue;
+  border-right: 12px solid blue;
+  border-bottom: 15px solid transparent;
+  border-left: 12px solid blue;
+}
+
+.modal {
+  padding: 1em;
+  max-width: 50ch;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background: #757575;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wrapper .container {
+  width: 200px;
+}
+
+.wrapper .hamburger_btn {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  position: fixed;
+  cursor: pointer;
+}
+
+.wrapper .hamburger_btn > div {
+  position: fixed;
+  top: 45%;
+  left: 25%;
+  width: 50%;
+  height: 3px;
+  background: #fff;
+  border-radius: 50px;
+  transition: all 0.3s linear;
+}
+
+.wrapper .hamburger_btn .one {
+  top: 25%;
+}
+
+.wrapper .hamburger_btn .three {
+  top: 65%;
+}
+
+.wrapper .container .menu {
+  width: 180px;
+  height: auto;
+  margin: 0 auto;
+  background: #fff;
+  position: relative;
+  opacity: 0;
+  top: -10px;
+  transition: all 0.5s linear;
+}
+
+.wrapper .container .menu ul li {
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.2s linear;
+}
+
+.wrapper .container .menu ul li a {
+  padding: 10px;
+  font-size: 12px;
+  color: #757575;
+  display: block;
+  transition: all 0.2s linear;
+}
+
+.wrapper .container .menu ul li:hover {
+  background: #80ddd2;
+}
+
+.wrapper .container .menu ul li:hover a {
+  color: #fff;
+}
+
+.wrapper .container .menu:before {
+  content: "";
+  position: absolute;
+  top: -19px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+.wrapper .hamburger_btn.active {
+  transform: rotate(90deg);
+}
+
+.wrapper .hamburger_btn.active .one {
+  top: 45%;
+  left: 25%;
+  transform: rotate(45deg);
+}
+
+.wrapper .hamburger_btn.active .two {
+  opacity: 0;
+}
+
+.wrapper .hamburger_btn.active .three {
+  top: 45%;
+  left: 25%;
+  transform: rotate(-45deg);
+}
+
+.wrapper .container .menu.active {
+  opacity: 1;
+  top: 0px;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wrapper .container {
+  width: 200px;
+}
+
+.wrapper .hamburger_btn {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  position: relative;
+  cursor: pointer;
+}
+
+.wrapper .hamburger_btn > div {
+  position: absolute;
+  top: 45%;
+  left: 25%;
+  width: 50%;
+  height: 3px;
+  background: #fff;
+  border-radius: 50px;
+  transition: all 0.3s linear;
+}
+
+.wrapper .hamburger_btn .one {
+  top: 25%;
+}
+
+.wrapper .hamburger_btn .three {
+  top: 65%;
+}
+
+.wrapper .container .menu {
+  width: 180px;
+  height: auto;
+  margin: 0 auto;
+  background: #fff;
+  position: relative;
+  opacity: 0;
+  top: -10px;
+  transition: all 0.5s linear;
+}
+
+.wrapper .container .menu ul li {
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.2s linear;
+}
+
+.wrapper .container .menu ul li a {
+  padding: 10px;
+  font-size: 12px;
+  color: #757575;
+  display: block;
+  transition: all 0.2s linear;
+}
+
+.wrapper .container .menu ul li:hover {
+  background: #80ddd2;
+}
+
+.wrapper .container .menu ul li:hover a {
+  color: #fff;
+}
+
+.wrapper .container .menu:before {
+  content: "";
+  position: absolute;
+  top: -19px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+.wrapper .hamburger_btn.active {
+  transform: rotate(90deg);
+}
+
+.wrapper .hamburger_btn.active .one {
+  top: 45%;
+  left: 25%;
+  transform: rotate(45deg);
+}
+
+.wrapper .hamburger_btn.active .two {
+  opacity: 0;
+}
+
+.wrapper .hamburger_btn.active .three {
+  top: 45%;
+  left: 25%;
+  transform: rotate(-45deg);
+}
+
+.wrapper .container .menu.active {
+  opacity: 1;
+  top: 0px;
+}
+
+.formBody {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  font-family: verdana;
+  border: none;
+  outline: none;
+  letter-spacing: 2px;
+  background: #222;
+  padding: 0px 0px 25px 10px;
+}
+
+.commentLine {
+  background: #222;
+}
+
+.formBody .container {
+  width: 500px;
+  text-align: left;
+}
+
+.box-container {
+  height: 200px;
+  width: 100%;
+  background: #444;
+  box-shadow: 0 5px 15px #111;
+  border-radius: 5px 5px 5px 5px;
+  padding: 10px 10px 20px 15px;
+  display: none;
+}
+
+.box-container .box {
+  height: 75%;
+  width: 90%;
+  border-radius: 5px;
+  padding: 20px 30px 5px 15px;
+  background: #f8f8f8;
+  overflow-y: auto;
+  text-align: left;
+}
+
+#input {
+  width: 100%;
+  height: 40px;
+  background: none;
+  font-size: 15px;
+  color: #fff;
+  border-style: none;
+  border-bottom: 1px solid #fff;
+}
+
+#input:focus {
+  border-bottom: 2px solid #fff;
+}
+
+button {
+  height: 30px;
+  width: 160px;
+  background: #ff0033;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px 0;
+  font-size: 15px;
+  box-shadow: 0 3px 10px #111;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.like {
+  color: rgba(0, 0, 0, 0.1882352941);
+  font-size: 3em;
+}
+
+.heart i.fa-heart {
+  color: #f44336;
+}/*# sourceMappingURL=stylesCapstoneProject.css.map */

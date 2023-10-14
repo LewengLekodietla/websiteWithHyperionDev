@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--This html file makes use of the same .css file that the 'index.html' uses-->
+        <link rel="stylesheet" href="stylesCapstoneProject.css">
+        <title>Blog Profile Registration</title>
+    </head>
+    <body background="imagesCapstone/Website-Design-Background.jpg">
+        <form>
+            <div class="firstBigParagraph"><h1>Register Blog Profile</h1></div>
+            <div class="usernameAttributes">
+                <label for="usernameField" class="promptFirstInputField">Please enter your username?:</label>
+
+                <!--The below line of code provides a hint to the user on what input format to follow, and that user input
+                will be validated that there is indeed an entry before allowing the form submission-->
+                <input type="text" class="usernameField" placeholder="TheFixer1" required><br><br>
+            </div>
+            <div class="passwordAttributes">
+                <label for="passwordField">Please enter your password?:</label>
+
+                <!--The below line of code will be validated that there is indeed an entry before allowing the form submission
+                (also masking the input) for safety surety-->
+                <input type="password" class="passwordField" required>
+            </div>
+            <div class="ageOptions">
+                <p>Are you of working age?:</p>
+
+                <!--The below line of code will be validated that there is indeed selection before allowing the form submission-->
+                <input type="radio" name="age" value="yes" class="option-yes" required>
+                <label for="option-1">Yes</label>
+
+                <!--The below line of code will be validated that there is indeed selection before allowing the form submission-->
+                <input type="radio" name="age" value="no" class="option-no" required>
+                <label for="option-1">No</label>
+                <br>
+                <p>Please select your age bracket?:</p>
+
+                <!--The below line of code will be validated that there is indeed selection before allowing the form submission-->
+                <input type="radio" name="age" value="18-25" class="option-1" required>
+                <label for="option-1">18-25</label>
+
+                <!--The below line of code will be validated that there is indeed selection before allowing the form submission-->
+                <input type="radio" name="age" value="19-35" class="option-2" required>
+                <label for="option-2">19-35</label>
+
+                <!--The below line of code will be validated that there is indeed selection before allowing the form submission-->
+                <input type="radio" name="age" value="36 or older" class="option-3" required>
+                <label for="option-3">36 or older</label>
+            </div><br>
+            <div class="securityQuestions" required>
+                <label for="questionsSecurityOptions">Select a security question to answer:</label>
+
+                <!--The below code, with tag <selection> ensures a drop-down list of options is provided to user-->
+                <select name="questionsSecurityOptions" class="questionsSecurityOptions">
+                    <option value="questionOne">What are your favourite coloured socks?</option>
+                    <option value="questionTwo">What is the name of the neighbourhood you grew up in?</option>
+                    <option value="questionThree">What is your mother's maiden name?</option>
+                </select>
+            </div><br>
+            <div class="confirmationSecurityQuestion" required>
+                <label for="securityQuestionAnswer">Enter your answer to the security question selected above?:</label>
+
+                <!--The below line of code will be validated that there is indeed an entry before allowing the form submission-->
+                <input type="text" name="securityQuestionAnswer" class="securityQuestionAnswer"required>
+            </div><br><br>
+            <div class="quoteAreaDetails">
+                <label for="quote">A Famous and Inspirational Quote:</label><br>
+                <p>“If you always put a limit on everything you do, physical or anything else, it will spread into your work and into your life. There are no limits. There are only plateaus, and you must not stay there, you must go beyond them.”
+                    <b>Bruce Lee, Actor, Martial Artist, Philosopher</b></p>
+            </div><br><br>
+            <div class="confirmationButton">
+
+                <!--The below line of code will be validated that there is indeed a selection before allowing the form submission-->
+                <input type="submit" value="Submit the form" required>
+            </div>
+        </form>
+    </body>
+</html>
