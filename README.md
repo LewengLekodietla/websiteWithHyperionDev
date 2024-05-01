@@ -2,7 +2,7 @@
 
 ## Project Description
 
-This project's intention was for the Capstone Project created for task number: L1T20 - to be deployed as a website via gihub
+This project's intention was for the Capstone Project created for task number: L1T20 - to be deployed as a website via github
 
 ## Table of Contents
 
